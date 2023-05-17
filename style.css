@@ -49,7 +49,48 @@ header h1{
     place-self: start center;
 
 }
-header .arrow-down
-{
+header .arrow-down{
     place-self: start center;
+}
+.info img{
+    width: 100%;
+} 
+.description{
+    display: grid;
+    padding: 64px 0px;
+    place-items: center;
+    height: 500px;
+}
+.description__title{
+    font-family: var(--title-font);
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    width: 300px;
+}
+.description__text{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--gray);
+    text-align: center;
+    line-height: 2rem;
+}
+.description__learn-more{
+    position: relative;
+    font-family: var(--title-font);
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.line{
+    height: 8px;
+    left: -5%;
+    bottom: 1%;
+    width: 110%;
+    position: absolute;
+    z-index: -1;
+    opacity: .4;
+}
+.line-yelllow{
+    background-color: var(--yellow);
 }
