@@ -13,6 +13,7 @@
     --white: #ffffff;
     --graphic-text: #25564b;
     --photography-text: #19536b;
+    --background-footer: #90d4c5;
     --footer: #458c7e;
     --background-color: #FFFBFB;
 }
@@ -74,6 +75,7 @@ header .arrow-down{
     color: var(--gray);
     text-align: center;
     line-height: 2rem;
+    padding: 0px 12px;
 }
 .description__learn-more{
     position: relative;
@@ -83,14 +85,136 @@ header .arrow-down{
     text-transform: uppercase;
 }
 .line{
+    position: absolute;
     height: 8px;
     left: -5%;
     bottom: 1%;
     width: 110%;
-    position: absolute;
     z-index: -1;
-    opacity: .4;
+    opacity: .3;
+    border-radius: 4px;
 }
-.line-yelllow{
+.line-yellow{
     background-color: var(--yellow);
+}
+.line-red{
+    background-color: var(--red);
+}
+.container{
+    height: 600px;
+    background-size: cover;
+}
+.container.graphic{
+    background-image: url(./images/mobile/image-graphic-design.jpg);
+}
+.container.graphic div{
+    color: var(--graphic-text);
+}
+.container .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+    gap: 1.5rem;
+}
+.container .description__text{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.container.photography{
+    background-image: url(./images/mobile/image-photography.jpg);
+}
+.container.photography div{
+    color: var(--photography-text);
+}
+.testimonials{
+    text-align: center;
+}
+.testimonials-title{
+    font-family: var(--title-font);
+    font-size: 1.1rem;
+    letter-spacing: .2rem;
+    color: var(--gray);
+    text-transform: uppercase;
+    padding-top: 64px;
+}
+.client{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+.client__avatar{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-size: cover;
+}
+.client__avatar.client1{
+    background-image: url(./images/image-emily.jpg);
+}
+.client__avatar.client2{
+    background-image: url(./images/image-thomas.jpg);
+}
+.client__avatar.client3{
+    background-image: url(./images/image-jennie.jpg);
+}
+.client__text{
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    opacity: .6;
+}
+.client__name{
+    font-family: var(--title-font);
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.client__job{
+    color: var(--gray);
+    font-weight: 600;
+    padding-top: 12px ;
+}
+.images{
+    display: grid;
+    grid-template-areas:
+    "milk orange_"
+    "cone sugar"
+    ;
+}
+.milk{
+    grid-area: milk;
+}
+.orange{
+    grid-area: orange_;
+}
+.cone{
+    grid-area: cone;
+}
+.sugar{
+    grid-area: sugar;
+}
+.footer{
+    display: grid;
+    place-items: center;
+    background-color: var(--background-footer);
+    color: var(--footer);
+    padding: 64px 0px;
+    gap: 32px;
+}
+.footer_title{
+    font-family: var(--title-font);
+    font-size: 32px;
+}
+.footer_text{
+    font-family: var(--text-font);
+    word-spacing: 20px;
+    opacity: 70%;
+}
+.logos{
+    display: flex;
+    gap: 28px;
+    padding-top: 40px;
 }
