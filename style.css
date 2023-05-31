@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
 :root{
     --text-font: 'Barlow', sans-serif;
     --title-font: 'Fraunces', serif;
@@ -179,22 +191,10 @@ header .arrow-down{
 }
 .images{
     display: grid;
-    grid-template-areas:
-    "milk orange_"
-    "cone sugar"
-    ;
+    grid-template-columns: 1fr 1fr;
 }
-.milk{
-    grid-area: milk;
-}
-.orange{
-    grid-area: orange_;
-}
-.cone{
-    grid-area: cone;
-}
-.sugar{
-    grid-area: sugar;
+.images img{
+    width: 100%;
 }
 .footer{
     display: grid;
@@ -206,12 +206,15 @@ header .arrow-down{
 }
 .footer_title{
     font-family: var(--title-font);
-    font-size: 32px;
+    font-size: 2.5rem;
+    font-weight: 900;
 }
 .footer_text{
+    display: flex;
     font-family: var(--text-font);
-    word-spacing: 20px;
-    opacity: 70%;
+    justify-content: space-evenly;
+    opacity: 90%;
+    width: 100vw;
 }
 .logos{
     display: flex;
